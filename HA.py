@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from MaltegoTransform import *
 import requests
 import json
@@ -58,7 +59,7 @@ def hash_to_filename():
         if respcode == 0:
             for r in response_json['response']:
                 if 'submitname' in r:
-                    me = mt.addEntity("maltego.Phrase", '%s' % r['submitname'])
+                    me = mt.addEntity("maltego.Phrase", '%s' % r['submitname'].encode("utf-8"))
                     me.setLinkLabel("HA")
 
     except:
