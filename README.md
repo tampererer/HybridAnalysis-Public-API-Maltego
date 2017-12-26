@@ -6,7 +6,7 @@ Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-a
 - Python 2.7.x + requests, json module
 
 # Setup
-- Edit HA.py and set "apikey" and "secret" variables with your API key and Secret.
+- Edit HA.py and set "apikey" and "secret" variable with your API key and Secret.
 - Put HA.py and MaltegoTransform.py into your working directory. (e.g. C:\Maltego\Transforms\HybridAnalysis)
 - Open HA.mtz to import Maltego configuration.
 - The current configuration uses the following directories, so you may have to change them according to your environment. (Maltego -> Transforms -> Transform Manager)  
