@@ -14,16 +14,17 @@ Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-a
   Working directory = C:\Maltego\Transforms\HybridAnalysis
 
 # Transforms
+- hash_to_all
 - hash_to_c2host
 - hash_to_c2ip
 - hash_to_filename
+- hash_to_filetype
+- hash_to_label
 - hash_to_md5
 - hash_to_sha256
-- hash_to_label
-- hash_to_threatscore
-- hash_to_tag
-- hash_to_filetype
 - hash_to_similar
+- hash_to_tag
+- hash_to_threatscore
 - c2host_to_hash
 - c2ip_to_hash
 - label_to_hash
