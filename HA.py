@@ -297,6 +297,64 @@ def tag_to_hash():
 
     return mt
 
+# hash_to_all
+def hash_to_all():
+    try:
+        headers = {'User-Agent': 'Falcon'}
+        response = requests.get(apiurl + 'scan/' + data, headers=headers)
+        response_json = response.json()
+        respcode = int(response_json['response_code'])
+
+        response2 = requests.get(apiurl + 'search?query=similar-to:' + data, headers=headers)
+        response_json2 = response2.json()
+        respcode2 = int(response_json2['response_code'])
+
+        if respcode == 0:
+            for r in response_json['response']:
+                if 'domains' in r:
+                    for item in r['domains']:
+                        me = mt.addEntity("maltego.Domain", '%s' % item)
+                        me.setLinkLabel("HA")
+                if 'hosts' in r:
+                    for item in r['hosts']:
+                        me = mt.addEntity("maltego.IPv4Address", '%s' % item)
+                        me.setLinkLabel("HA")
+                if 'submitname' in r:
+                    me = mt.addEntity("maltego.Phrase", '%s' % r['submitname'].encode("utf-8"))
+                    me.setLinkLabel("HA")
+                if 'md5' in r:
+                    me = mt.addEntity("maltego.Hash", '%s' % r['md5'])
+                    me.setLinkLabel("HA")
+                if 'sha256' in r:
+                    me = mt.addEntity("maltego.Hash", '%s' % r['sha256'])
+                    me.setLinkLabel("HA")
+                if 'vxfamily' in r:
+                    me = mt.addEntity("maltego.Avdetection", '%s' % r['vxfamily'])
+                    me.setLinkLabel("HA Label")
+                if 'threatscore' in r:
+                    me = mt.addEntity("maltego.Phrase", '%s' % r['threatscore'])
+                    me.setLinkLabel("HA Threat Score")
+                if 'classification_tags' in r:
+                    for item in r['classification_tags']:
+                        me = mt.addEntity("maltego.Phrase", '%s' % item)
+                        me.setLinkLabel("HA Tag")
+                if 'type' in r:
+                    me = mt.addEntity("maltego.Phrase", '%s' % r['type'])
+                    me.setLinkLabel("HA")
+
+        if respcode2 == 0:
+            for r in response_json2['response']['result']:
+                if 'sha256' in r:
+                    me = mt.addEntity("maltego.Hash", '%s' % r['sha256'])
+                    me.setLinkLabel("HA similar-to")
+
+    except:
+        pass
+
+    return mt
+
+
+
 # main
 func = sys.argv[1]
 data = sys.argv[2]
