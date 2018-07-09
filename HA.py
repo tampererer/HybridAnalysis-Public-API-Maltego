@@ -2,10 +2,17 @@
 from MaltegoTransform import *
 import requests
 import json
+import random
 
-apikey = "<Your API Key>"
-secret = "<Your Secret>"
-apiurl = "https://" + apikey + ":" + secret + "@www.hybrid-analysis.com/api/"
+apisec = [
+        "<Your API Key>:<Your Secret>", 
+        "<Your API Key>:<Your Secret>", 
+        "<Your API Key>:<Your Secret>", 
+#        "<Your API Key>:<Your Secret>", 
+#        "<Your API Key>:<Your Secret>"
+        ]
+apisec = random.choice(apisec)
+apiurl = "https://" + apisec + "@www.hybrid-analysis.com/api/"
 
 
 # hash_to_c2host
@@ -59,8 +66,9 @@ def hash_to_filename():
         if respcode == 0:
             for r in response_json['response']:
                 if 'submitname' in r:
+                    abc = r['submitname'].encode("unicode-escape")
                     me = mt.addEntity("maltego.Phrase", '%s' % r['submitname'].encode("utf-8"))
-                    me.setLinkLabel("HA")
+                    me.setLinkLabel("HA Filename")
 
     except:
         pass
@@ -79,7 +87,7 @@ def hash_to_md5():
             for r in response_json['response']:
                 if 'md5' in r:
                     me = mt.addEntity("maltego.Hash", '%s' % r['md5'])
-                    me.setLinkLabel("HA")
+                    me.setLinkLabel("md5")
 
     except:
         pass
@@ -98,7 +106,7 @@ def hash_to_sha256():
             for r in response_json['response']:
                 if 'sha256' in r:
                     me = mt.addEntity("maltego.Hash", '%s' % r['sha256'])
-                    me.setLinkLabel("HA")
+                    me.setLinkLabel("sha256")
 
     except:
         pass
@@ -321,13 +329,13 @@ def hash_to_all():
                         me.setLinkLabel("HA")
                 if 'submitname' in r:
                     me = mt.addEntity("maltego.Phrase", '%s' % r['submitname'].encode("utf-8"))
-                    me.setLinkLabel("HA")
+                    me.setLinkLabel("HA submitname")
                 if 'md5' in r:
                     me = mt.addEntity("maltego.Hash", '%s' % r['md5'])
-                    me.setLinkLabel("HA")
+                    me.setLinkLabel("md5")
                 if 'sha256' in r:
                     me = mt.addEntity("maltego.Hash", '%s' % r['sha256'])
-                    me.setLinkLabel("HA")
+                    me.setLinkLabel("sha256")
                 if 'vxfamily' in r:
                     me = mt.addEntity("maltego.Avdetection", '%s' % r['vxfamily'])
                     me.setLinkLabel("HA Label")
