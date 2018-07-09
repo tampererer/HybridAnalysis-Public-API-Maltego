@@ -18,6 +18,15 @@ Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-a
   Command line = C:\Python27\python.exe  
   Working directory = C:\Maltego\Transforms\HybridAnalysis
 
+# セットアップ
+- HA.py の中で、apikey と secret という変数に、自分の API key と Secret を記載してください。
+- 
+- 
+- 
+
+  Command line = C:\Python27\python.exe  
+  Working directory = C:\Maltego\Transforms\HybridAnalysis
+
 # Transforms
 - hash_to_all
 - hash_to_c2host
