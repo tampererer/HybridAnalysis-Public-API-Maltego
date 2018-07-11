@@ -30,19 +30,66 @@ Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-a
   Working directory = C:\Maltego\Transforms\HybridAnalysis
 
 # Transforms
-- hash_to_all
-- hash_to_c2host
-- hash_to_c2ip
-- hash_to_filename
-- hash_to_filetype
-- hash_to_label
-- hash_to_md5
-- hash_to_sha256
-- hash_to_similar
-- hash_to_tag
-- hash_to_threatscore
-- c2host_to_hash
-- c2ip_to_hash
-- label_to_hash
-- authentihash_to_hash
-- tag_to_hash
+- [HA] hash_to_all  
+Input:   
+Output:   
+
+- [HA] hash_to_c2host  
+Input:     
+Output:   
+
+- [HA] hash_to_c2ip  
+Input:     
+Output:   
+
+- [HA] hash_to_filename  
+Input:     
+Output:   
+
+- [HA] hash_to_filetype  
+Input:   
+Output:   
+
+- [HA] hash_to_label  
+Input:   
+Output:   
+
+- [HA] hash_to_md5  
+Input:   
+Output:   
+
+- [HA] hash_to_sha256  
+Input:   
+Output:   
+
+- [HA] hash_to_similar  
+Input:   
+Output:   
+
+- [HA] hash_to_tag  
+Input:   
+Output:   
+
+- [HA] hash_to_threatscore  
+Input:   
+Output:   
+
+- [HA] c2host_to_hash  
+Input:   
+Output:   
+
+- [HA] c2ip_to_hash  
+Input:   
+Output:   
+
+- [HA] label_to_hash  
+Input:   
+Output:   
+
+- [HA] authentihash_to_hash  
+Input:   
+Output:   
+
+- [HA] tag_to_hash  
+Input:   
+Output:   
