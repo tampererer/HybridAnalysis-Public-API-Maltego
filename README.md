@@ -98,14 +98,14 @@ Output: Hashes
 - [HA] label_to_hash  
 Input: Malware name  
 Output: Hashes  
-<img src="" width="600">
+<img src="https://user-images.githubusercontent.com/16297449/42560270-3aba7914-8531-11e8-8297-351dd0de71a0.png" width="300">
 
 - [HA] authentihash_to_hash  
 Input: Authentihash  
 Output: Hashes  
-<img src="" width="600">
+<img src="https://user-images.githubusercontent.com/16297449/42560759-672dad58-8532-11e8-845d-75da362ec28a.png" width="300">
 
 - [HA] tag_to_hash  
 Input: Tag  
 Output: Hashes  
-<img src="" width="600">
+<img src="https://user-images.githubusercontent.com/16297449/42560367-77edd9ac-8531-11e8-9465-cef2de426cf2.png" width="300">
