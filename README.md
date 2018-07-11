@@ -88,12 +88,12 @@ Output: Threat score
 - [HA] c2host_to_hash  
 Input: Domain  
 Output: Hashes  
-<img src="https://user-images.githubusercontent.com/16297449/42559838-3b4da046-8530-11e8-8831-176abbfdb15f.png" width="600">
+<img src="https://user-images.githubusercontent.com/16297449/42559838-3b4da046-8530-11e8-8831-176abbfdb15f.png" width="900">
 
 - [HA] c2ip_to_hash  
 Input: IP address  
 Output: Hashes  
-<img src="https://user-images.githubusercontent.com/16297449/42559952-7b018b08-8530-11e8-8e70-07a2ac4f584c.png" width="600">
+<img src="https://user-images.githubusercontent.com/16297449/42559952-7b018b08-8530-11e8-8e70-07a2ac4f584c.png" width="900">
 
 - [HA] label_to_hash  
 Input: Malware name  
