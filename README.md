@@ -56,45 +56,49 @@ Output: File type
 <img src="https://user-images.githubusercontent.com/16297449/42556314-283a02ba-8526-11e8-84ee-2a9118306411.png" width="900">
 
 - [HA] hash_to_label  
-Input:   
-Output:   
+Input: Hash  
+Output: Malware name  
+<img src="https://user-images.githubusercontent.com/16297449/42558864-7435c5a8-852d-11e8-8ac7-fd5839200d05.png" width="300">
 
 - [HA] hash_to_md5  
-Input:   
-Output:   
+Input: Hash  
+Output: MD5 Hash  
+<img src="https://user-images.githubusercontent.com/16297449/42559195-6c16eb1c-852e-11e8-8d72-4c3bb9fe1c42.png" width="300">
 
 - [HA] hash_to_sha256  
-Input:   
-Output:   
+Input: Hash  
+Output: SHA256 Hash  
+<img src="https://user-images.githubusercontent.com/16297449/42559237-89944bd0-852e-11e8-8c3c-26a5bda5d56e.png" width="300">
 
 - [HA] hash_to_similar  
-Input:   
-Output:   
+Input: Hash  
+Output: Hashes of similar binaries
+<img src="https://user-images.githubusercontent.com/16297449/42559562-6ba9eeda-852f-11e8-8510-e12dcc6142f8.png" width="600">
 
 - [HA] hash_to_tag  
-Input:   
-Output:   
+Input: Hash  
+Output: Tag  
 
 - [HA] hash_to_threatscore  
-Input:   
-Output:   
+Input: Hash  
+Output: Threat score  
 
 - [HA] c2host_to_hash  
-Input:   
-Output:   
+Input: Domain  
+Output: Hashes  
 
 - [HA] c2ip_to_hash  
-Input:   
-Output:   
+Input: IP address  
+Output: Hashes  
 
 - [HA] label_to_hash  
-Input:   
-Output:   
+Input: Malware name  
+Output: Hashes  
 
 - [HA] authentihash_to_hash  
-Input:   
-Output:   
+Input: Authentihash  
+Output: Hashes  
 
 - [HA] tag_to_hash  
-Input:   
-Output:   
+Input: Tag  
+Output: Hashes  
