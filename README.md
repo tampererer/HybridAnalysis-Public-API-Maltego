@@ -53,7 +53,7 @@ Output: Filename
 - [HA] hash_to_filetype  
 Input: Hash  
 Output: File type  
-<img src="https://user-images.githubusercontent.com/16297449/42556314-283a02ba-8526-11e8-84ee-2a9118306411.png" width="600">
+<img src="https://user-images.githubusercontent.com/16297449/42556314-283a02ba-8526-11e8-84ee-2a9118306411.png" width="900">
 
 - [HA] hash_to_label  
 Input:   
