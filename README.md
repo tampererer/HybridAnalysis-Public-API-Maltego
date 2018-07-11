@@ -4,10 +4,12 @@ Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-a
 # Prerequisites
 - Hybrid Analysis Public API access
 - Python 2.7.x + requests, json module
+- Python 3.6.x will probably work.
 
 # 必要なもの
 - Hybrid Analysis Public APIのアクセス権
 - Python 2.7.x + requests, json モジュール
+- Python 3.6.x でもたぶん動作します。
 
 # Setup
 - Edit HA.py and set "apikey" and "secret" variable with your API key and Secret. If you have multiple API keys and Secrets, you can set them to increase quota.
