@@ -33,7 +33,7 @@ Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-a
 - [HA] hash_to_all  
 Input: Hash  
 Output: Domain, IP address, Filename, Malware name, Threat score, File type, Tag  
-<img src="https://user-images.githubusercontent.com/16297449/42555787-603bcc72-8524-11e8-84f4-4b1594544f9b.png" width="1500">
+<img src="https://user-images.githubusercontent.com/16297449/42555787-603bcc72-8524-11e8-84f4-4b1594544f9b.png" width="1800">
 
 - [HA] hash_to_c2host  
 Input:     
