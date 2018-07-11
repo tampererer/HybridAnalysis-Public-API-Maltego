@@ -1,4 +1,4 @@
-# [HybridAnalysis] Maltego Local Transforms
+# [HybridAnalysis Public API] Maltego Local Transforms
 Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-analysis.com/apikeys/info
 
 # Prerequisites
