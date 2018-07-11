@@ -330,12 +330,12 @@ def hash_to_all():
                 if 'submitname' in r:
                     me = mt.addEntity("maltego.Phrase", '%s' % r['submitname'].encode("utf-8"))
                     me.setLinkLabel("HA submitname")
-                if 'md5' in r:
-                    me = mt.addEntity("maltego.Hash", '%s' % r['md5'])
-                    me.setLinkLabel("md5")
-                if 'sha256' in r:
-                    me = mt.addEntity("maltego.Hash", '%s' % r['sha256'])
-                    me.setLinkLabel("sha256")
+#                if 'md5' in r:
+#                    me = mt.addEntity("maltego.Hash", '%s' % r['md5'])
+#                    me.setLinkLabel("md5")
+#                if 'sha256' in r:
+#                    me = mt.addEntity("maltego.Hash", '%s' % r['sha256'])
+#                    me.setLinkLabel("sha256")
                 if 'vxfamily' in r:
                     me = mt.addEntity("maltego.Avdetection", '%s' % r['vxfamily'])
                     me.setLinkLabel("HA Label")
