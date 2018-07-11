@@ -78,27 +78,34 @@ Output: Hashes of similar binaries
 - [HA] hash_to_tag  
 Input: Hash  
 Output: Tag  
+<img src="https://user-images.githubusercontent.com/16297449/42559680-c3d6fb98-852f-11e8-96de-8f99deb18e67.png" width="300">
 
 - [HA] hash_to_threatscore  
 Input: Hash  
 Output: Threat score  
+<img src="https://user-images.githubusercontent.com/16297449/42559750-055a47a0-8530-11e8-8947-163aa7047b16.png" width="300">
 
 - [HA] c2host_to_hash  
 Input: Domain  
 Output: Hashes  
+<img src="https://user-images.githubusercontent.com/16297449/42559838-3b4da046-8530-11e8-8831-176abbfdb15f.png" width="600">
 
 - [HA] c2ip_to_hash  
 Input: IP address  
 Output: Hashes  
+<img src="https://user-images.githubusercontent.com/16297449/42559952-7b018b08-8530-11e8-8e70-07a2ac4f584c.png" width="600">
 
 - [HA] label_to_hash  
 Input: Malware name  
 Output: Hashes  
+<img src="" width="600">
 
 - [HA] authentihash_to_hash  
 Input: Authentihash  
 Output: Hashes  
+<img src="" width="600">
 
 - [HA] tag_to_hash  
 Input: Tag  
 Output: Hashes  
+<img src="" width="600">
