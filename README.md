@@ -33,23 +33,27 @@ Maltego Local Transform to use Hybrid Analysis Public API - https://www.hybrid-a
 - [HA] hash_to_all  
 Input: Hash  
 Output: Domain, IP address, Filename, Malware name, Threat score, File type, Tag  
-<img src="https://user-images.githubusercontent.com/16297449/42555787-603bcc72-8524-11e8-84f4-4b1594544f9b.png" width="1800">
+<img src="https://user-images.githubusercontent.com/16297449/42555973-0af5b38a-8525-11e8-8a7a-88c8657414e3.png" width="1500">
 
 - [HA] hash_to_c2host  
-Input:     
-Output:   
+Input: Hash  
+Output: Domain  
+<img src="https://user-images.githubusercontent.com/16297449/42556053-4b5ba2a4-8525-11e8-896e-5b196ae26119.png" width="300">
 
 - [HA] hash_to_c2ip  
-Input:     
-Output:   
+Input: Hash  
+Output: IP address  
+<img src="https://user-images.githubusercontent.com/16297449/42556117-80963c72-8525-11e8-904c-9ddf2bcb45b2.png" width="300">
 
 - [HA] hash_to_filename  
-Input:     
-Output:   
+Input: Hash  
+Output: Filename  
+<img src="https://user-images.githubusercontent.com/16297449/42556165-acce01da-8525-11e8-87e5-9a58a9889388.png" width="300">
 
 - [HA] hash_to_filetype  
-Input:   
-Output:   
+Input: Hash  
+Output: File type  
+<img src="https://user-images.githubusercontent.com/16297449/42556314-283a02ba-8526-11e8-84ee-2a9118306411.png" width="300">
 
 - [HA] hash_to_label  
 Input:   
